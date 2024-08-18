@@ -32,4 +32,4 @@ def test_del_positive():
     del_url = put_positive()
     del_response = requests.delete(url=del_url, headers=del_headers())
     print("Deleted")
-    verify_status(del_response, 201)
+    verify_status(del_response, 201) #it should be 204 but restful response is 201.
